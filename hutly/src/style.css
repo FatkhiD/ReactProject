@@ -1,0 +1,15 @@
+:root {
+  --white: #ffffff;
+  --white-gray: #f7f8f8;
+  --dark-blue: #050f27;
+
+  --bg-page: var(--white);
+  --bg: var(--white-gray);
+  --text: var(--dark-blue);
+  --btn-contact-bg: var(--dark-blue);
+  --btn-contact-text: var(--white);
+}
+
+body {
+  font-family: "Satoshi-Variable", sans-serif;
+}

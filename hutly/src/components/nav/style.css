@@ -1,0 +1,47 @@
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  background-color: var(--bg);
+  border-radius: 100px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.nav__item {
+}
+
+.nav__link {
+  color: var(--text);
+  position: relative;
+}
+
+.nav__link--active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--text);
+}
+
+.nav__btn {
+  display: inline-block;
+  justify-self: end;
+
+  background-color: var(--btn-contact-bg);
+  color: var(--btn-contact-text);
+
+  border-radius: 30px 100px 100px 30px;
+  padding: 32px 43px;
+}
